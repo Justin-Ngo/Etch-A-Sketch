@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="./style.css">
+		<script type="text/javascript" src="./Etch-A-Sketch.js"></script>
+	</head>
+	<body>
+		<div class="grid-reset">Reset</div>
+		<!-- see: Unobtrusive javascript: https://en.wikipedia.org/wiki/Unobtrusive_JavaScript -->
+		<!-- <div class="grid-container" style="cursor: pointer;" onclick="create_grid(15)"></div> -->
+		<!-- Div's can't have onload method, either put it in the  "main" of javascript or call it before or after your div  -->
+		<div class="grid-container"></div>
+	</body>
+	<script>create_grid(16);</script>
+</html>

@@ -1,0 +1,88 @@
+/* General Reset  */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: rgb(56, 117, 85);
+}
+/* Another way of making a div the size of :-moz-full-screen
+https://stackoverflow.com/questions/712689/css-div-stretch-100-page-height/10639419
+html{
+    min-height:100%;/* make sure it is at least as tall as the viewport 
+    position:relative;
+}
+body{
+    height:100%; /* force the BODY element to match the height of the HTML element 
+}
+#cloud-container{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    overflow:hidden;
+    z-index:-1; /* Remove this line if it's not going to be a background! 
+} 
+*/
+
+.grid-reset{
+	display: flex;
+	border: 1px solid #dfe1e5;
+	border-radius: 24px;
+	height: 44px;
+	width: 582px;
+	margin: 50px auto;
+	
+	/* Text to be in center of div */
+	justify-content: center;
+	align-items: center;
+	background-color: #7ebd96;
+}
+
+.grid-reset:hover{
+    box-shadow: 0 1px 6px rgba(32,33,36,0.28);
+    border-color: rgba(223,225,229,0);
+}
+
+.grid-container {
+	display: grid;
+	background-color: #ffffff;
+	/* If you want to have full browser grid */
+	/* Viewport height vh  */
+	/* height: 100vh;  */
+	width: 960px;
+	height: 960px;
+	/* Horizontal center */
+	margin: 0 auto; 
+
+	border: 1px solid;
+
+	/* Vertical align  */
+	/* position: relative; */
+	/* top: 50%; */
+	/* transform: translateY(10%); */
+
+	/* Disable Selection: 
+	Problem was when I was click and hold on the grid, there were times were the cursor would 
+	display a "not allowed sign" (a circle with a slash through it) in chrome. I opened it in Firefox and tried
+	again and I could see a ghost image with the not allow sign (chrome doesn't display ghost image)
+	probably don't need all of this */
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.grid-boxes{
+	border: 1px solid rgb(182, 175, 175);
+	background-color: #00000000
+}
+
+/* .grid-boxes:hover{
+	background-color: brown;
+	transition: 1s;
+} */
